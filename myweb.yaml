@@ -16,7 +16,7 @@ spec:
         app: myweb
     spec:
       containers:
-      - image: harbor.its.local/library/myweb:latest
+      - image: harbor.its.local/library/myweb:6
         imagePullPolicy: Always
         name: myweb
 ---
