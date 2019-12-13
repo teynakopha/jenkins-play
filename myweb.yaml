@@ -6,7 +6,7 @@ metadata:
     app: myweb
   name: myweb
 spec:
-  replicas: 1
+  replicas: 10
   selector:
     matchLabels:
       app: myweb
@@ -16,7 +16,7 @@ spec:
         app: myweb
     spec:
       containers:
-      - image: harbor.its.local/library/myweb:latest
+      - image: harbor.its.local/library/myweb:21
         imagePullPolicy: Always
         name: myweb
 ---
